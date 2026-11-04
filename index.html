@@ -914,11 +914,11 @@ html, body {
    Las filas del grid usan minmax(0,1fr) para no superar nunca la altura
    disponible; los textos se degradan con elipsis solo si aun faltara espacio.
    ========================================================================== */
-.reveal .slides section:has(.cap-overview-card) > .grid{grid-template-rows:minmax(0,1fr)}
-.reveal .slides section:has(.cap-overview-card) .col-span-7.grid{grid-template-rows:repeat(3,minmax(0,1fr));min-height:0}
+.reveal .slides #lamina-2 > .grid{grid-template-rows:minmax(0,1fr)}
+.reveal .slides #lamina-2 .col-span-7.grid{grid-template-rows:repeat(3,minmax(0,1fr));min-height:0}
 .reveal .slides .cap-overview-card{min-height:0;overflow:hidden;display:flex;flex-direction:column}
-.reveal .slides .cap-overview-card p{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
-.reveal .slides section:has(.cap-overview-card) .uvm-forest-panel{min-height:0;overflow:hidden}
+.reveal .slides .cap-overview-card p{font-size:13px;line-height:1.4;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.reveal .slides #lamina-2 .uvm-forest-panel{min-height:0;overflow:hidden}
 .reveal .slides #cap-overview-desc{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden}
 .reveal .slides #cap-overview-deliverables{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 </style>
@@ -1081,7 +1081,7 @@ html, body {
       <!-- =================================================================
            LÁMINA 2: ESTRUCTURA GENERAL DE LA DEFENSA (EXPLORADOR INTERACTIVO)
            ================================================================= -->
-      <section>
+      <section id="lamina-2">
         <div class="flex items-center justify-between mb-2">
           <div class="flex items-center gap-3">
             <span class="chapter-medallion">00</span>
